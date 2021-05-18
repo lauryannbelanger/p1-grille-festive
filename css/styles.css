@@ -16,7 +16,7 @@
 @import "grille.css";
 
 
-/* Styles de base
+/* Header
    ========================================================================== */
 body {
     background-color: #F4F2DC;
@@ -28,10 +28,9 @@ body {
 
 #cactus {
     /*position: absolute;*/
-    width: 650px;
-    height: 537px;
+    width: 50%;
     margin-left: 0px;
-    margin-top: 183px;
+    margin-top: 15rem;
     background: #73B699;
     padding-right: 2rem;
     padding-top: 2rem;
@@ -40,39 +39,40 @@ body {
 
 #biblio {
     position: absolute;
-    width: 545px;
-    height: 529px;
+    width: 37%;
     left: 63%;
     margin-right: 0px;
     top: 0px;
 
 }
 
-header div {
+header .titre {
     position: absolute;
     background: #ED7452;
-    left: 395px;
-    top: 452px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    left: 35%;
+    top: 45rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 
 h1 {
     color: #3E3E5D;
-    font-size: 3.5rem;
+    font-size: 5.5rem;
     text-transform: lowercase;
     font-family: 'Antonio', sans-serif;
-    line-height: 1rem; /* le line-height est à arrangé pour l'écran étroit */
+    line-height: 2rem; /* le line-height est à arrangé pour l'écran étroit */
     text-align: center;
+    font-weight: 400;
 }
 h2 {
     color: #3E3E5D;
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: 'Libre Baskerville', serif;
     text-transform: lowercase;
     text-align: center;
-    line-height: 1rem;
+    line-height: 2rem;
+    font-weight: 400;
 }
 
 /*header #bloc1 {*/
@@ -84,8 +84,11 @@ h2 {
 /*    top: 146px;*/
 /*}*/
 
+/* Grille de mise en page
+   ========================================================================== */
+
 main {
-    padding-top: 5rem;
+    padding-top: 7rem;
 }
 ul {
     display: grid;
@@ -97,9 +100,15 @@ ul {
     list-style-type: none;
 }
 
+
 .livre1 {
     grid-column-start: 1;
     grid-column-end: 1;
+    background-color: #ED7452;
+    padding: 2rem;
+    background-image: url('../images/01_background-color.jpg');
+    background-repeat: repeat-y;
+    background-position: left;
 }
 
 .livre2 {
@@ -158,7 +167,8 @@ footer p {
     font-size: 2.5rem;
 }
 .bloc2 {
-    background: #ED7452;
+
+
 
 }
 
