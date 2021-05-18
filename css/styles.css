@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+/* Reset
+   ========================================================================== */
+@import "normalize.css";
+/* Utilitaires
+   ========================================================================== */
+@import "utilitaires.css";
+
+/* Charte typographique
+   ========================================================================== */
+@import "typo.css";
+
+/* Système de grille fluide
+   ========================================================================== */
+@import "grille.css";
+
+
+/* Styles de base
+   ========================================================================== */
+body {
+    background-color: #F4F2DC;
+}
+
+/* Grille de mise en page
+   ========================================================================== */
+
+
+#cactus {
+    /*position: absolute;*/
+    width: 650px;
+    height: 537px;
+    margin-left: 0px;
+    margin-top: 183px;
+    background: #73B699;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: -2rem;
+}
+
+#biblio {
+    position: absolute;
+    width: 545px;
+    height: 529px;
+    left: 63%;
+    margin-right: 0px;
+    top: 0px;
+
+}
+
+header div {
+    position: absolute;
+    background: #ED7452;
+    left: 395px;
+    top: 452px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+h1 {
+    color: #3E3E5D;
+    font-size: 3.5rem;
+    text-transform: lowercase;
+    font-family: 'Antonio', sans-serif;
+    line-height: 1rem; /* le line-height est à arrangé pour l'écran étroit */
+    text-align: center;
+}
+h2 {
+    color: #3E3E5D;
+    font-size: 2rem;
+    font-family: 'Libre Baskerville', serif;
+    text-transform: lowercase;
+    text-align: center;
+    line-height: 1rem;
+}
+
+/*header #bloc1 {*/
+/*    */
+/*    background: #73B699;*/
+/*    width: 702px;*/
+/*    height: 534px;*/
+/*    left: -11px;*/
+/*    top: 146px;*/
+/*}*/
+
+main {
+    padding-top: 5rem;
+}
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 10rem;
+    column-gap: 4rem;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.livre1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.livre2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.livre2 img, .livre3 img, .livre4 img, .livre6 img {
+    float: left;
+    margin-right: 2.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.livre3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.livre4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+.livre5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.livre6 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+h3 {
+    font-family: 'Antonio', sans-serif;
+    margin-top: -1rem;
+    margin-bottom: 0;
+}
+p {
+    margin: 0;
+    line-height: 1.5;
+    font-family: Libre Baskerville;
+}
+
+footer {
+    background-color: #73B699;
+    height: 10rem;
+    margin-top: 10rem;
+}
+footer p {
+    text-align: center;
+    color: #fff;
+    line-height: 10rem;
+    font-family: 'Antonio', sans-serif;
+    font-size: 2.5rem;
+}
+.bloc2 {
+    background: #ED7452;
+
+}
+
+
+
