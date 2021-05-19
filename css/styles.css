@@ -1,5 +1,21 @@
 @charset "UTF-8";
 
+
+/**
+ * @author Laury-Ann Bélanger <laury-ann6@hotmail.com>
+ *
+ * TABLE DES MATIERES
+ * Reset
+ * Utilitaires
+ * Charte typographique
+ * Système de grille fluide
+ *** Styles de base
+ *** Header et footer
+ *** Grille de mise en page
+ */
+
+
+
 /* Reset
    ========================================================================== */
 @import "normalize.css";
@@ -16,160 +32,269 @@
 @import "grille.css";
 
 
-/* Header
+/* Styles de base
    ========================================================================== */
 body {
     background-color: #F4F2DC;
 }
 
-/* Grille de mise en page
+/* Header et footer
    ========================================================================== */
-
-
 #cactus {
-    /*position: absolute;*/
-    width: 50%;
+    width: 100%;
     margin-left: 0px;
+    margin-bottom: 0;
+}
+
+@media (min-width: 600px) {
+#cactus {
+    width: 50%;
     margin-top: 15rem;
     background: #73B699;
-    padding-right: 2rem;
-    padding-top: 2rem;
-    padding-bottom: -2rem;
+    padding: 3rem;
+    padding-left: 0;
+    background-image: url("../images/00_background-color.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    }
 }
 
 #biblio {
-    position: absolute;
-    width: 37%;
-    left: 63%;
+    width: 100%;
     margin-right: 0px;
-    top: 0px;
+    margin-top: 0px;
 
+}
+
+@media (min-width: 600px) {
+    #biblio {
+        position: absolute;
+        width: 37%;
+        left: 63%;
+
+    }
 }
 
 header .titre {
     position: absolute;
     background: #ED7452;
-    left: 35%;
-    top: 45rem;
+    top: 40rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    width: 100%;
 }
 
 
 h1 {
     color: #3E3E5D;
-    font-size: 5.5rem;
+    font-size: 4rem;
     text-transform: lowercase;
     font-family: 'Antonio', sans-serif;
-    line-height: 2rem; /* le line-height est à arrangé pour l'écran étroit */
+    line-height: 2rem;
     text-align: center;
     font-weight: 400;
 }
+
 h2 {
     color: #3E3E5D;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: 'Libre Baskerville', serif;
     text-transform: lowercase;
     text-align: center;
     line-height: 2rem;
     font-weight: 400;
 }
-
-/*header #bloc1 {*/
-/*    */
-/*    background: #73B699;*/
-/*    width: 702px;*/
-/*    height: 534px;*/
-/*    left: -11px;*/
-/*    top: 146px;*/
-/*}*/
-
-/* Grille de mise en page
-   ========================================================================== */
-
-main {
-    padding-top: 7rem;
-}
-ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    row-gap: 10rem;
-    column-gap: 4rem;
-    text-decoration: none;
-    list-style-type: none;
-}
+@media (min-width: 600px) {
+    header .titre {
+        left: 35%;
+        top: 45rem;
+        width: auto;
+    }
 
 
-.livre1 {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    background-color: #ED7452;
-    padding: 2rem;
-    background-image: url('../images/01_background-color.jpg');
-    background-repeat: repeat-y;
-    background-position: left;
-}
+    h1 {
+        font-size: 5.5rem;
+        line-height: 2rem; /* le line-height est à arrangé pour l'écran étroit */
+    }
 
-.livre2 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
-
-.livre2 img, .livre3 img, .livre4 img, .livre6 img {
-    float: left;
-    margin-right: 2.5rem;
-    margin-bottom: 0.3rem;
-}
-
-.livre3 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-
-.livre4 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-
-.livre5 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-}
-
-.livre6 {
-    grid-column-start: 1;
-    grid-column-end: 4;
+    h2 {
+        font-size: 3rem;
+    }
 }
 
 h3 {
     font-family: 'Antonio', sans-serif;
-    margin-top: -1rem;
-    margin-bottom: 0;
+    font-size: 3.5rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    line-height: 3.5rem;
+    text-align: center;
 }
 p {
     margin: 0;
     line-height: 1.5;
-    font-family: Libre Baskerville;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.4rem;
+
 }
 
 footer {
     background-color: #73B699;
-    height: 10rem;
-    margin-top: 10rem;
+    height: 15rem;
+    margin-top: 5rem;
 }
+
 footer p {
     text-align: center;
     color: #fff;
-    line-height: 10rem;
+    padding-top: 3.5rem;
     font-family: 'Antonio', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
-.bloc2 {
+
+@media (min-width: 600px) {
+    h3 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    p {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    footer {
+        height: 10rem;
+        margin-top: 10rem;
+    }
+
+    footer p {
+        line-height: 10rem;
+        padding-top: 0rem;
+    }
+}
 
 
 
+
+/* Grille de mise en page
+   ========================================================================== */
+main {
+    padding-top: 3rem;
+    width: 90%;
+    margin-right: 5%;
+    /*margin-left: 5%;*/
+}
+
+@media (min-width: 600px) {
+    main {
+        padding-top: 7rem;
+    }
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul li {
+    margin-top: 2rem;
+}
+
+ul li img {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.livre1 {
+    background-color: #ED7452;
+    padding: 2rem;
+}
+.livre2 {
+    background-color: #F7CD84;
+    padding: 2rem;
+}
+
+.livre2 img, .livre3 img, .livre4 img, .livre6 img {
+    float: none;
+}
+
+.livre4 {
+    background-color: #F7CD84;
+    padding: 2rem;
+
+}
+
+.livre5 {
+    background-color: #ED7452;
+    padding: 2rem;
+}
+
+@media (min-width: 600px) {
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 10rem;
+        column-gap: 4rem;
+    }
+    ul li {
+        margin-top: 0rem;
+    }
+
+    ul li img {
+        width: auto;
+        margin-left: auto;
+    }
+
+    .livre1 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        background-image: url("../images/01_background-color.png");
+        background-repeat: repeat-y;
+        background-position: right;
+    }
+
+    .livre2 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        margin-bottom: 10rem;
+        background-image: url("../images/01_background-color.png");
+        background-repeat: repeat-y;
+        background-position: left;
+    }
+
+    .livre2 img, .livre3 img, .livre4 img, .livre6 img {
+        float: left;
+        margin-right: 2.5rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .livre3 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .livre4 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-image: url("../images/04_background-color.png");
+        background-repeat: repeat-x;
+        background-position: top;
+    }
+
+    .livre5 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        background-image: url("../images/01_background-color.png");
+        background-repeat: repeat-y;
+        background-position: left;
+    }
+
+    .livre6 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
 }
 
 
